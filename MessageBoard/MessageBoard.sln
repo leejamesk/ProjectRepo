@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBoard", "MessageBoard\MessageBoard.csproj", "{E98AC7F9-FDDD-46B6-855A-66EE0909CF9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBoard.Tests", "MessageBoard.Tests\MessageBoard.Tests.csproj", "{AAC023E7-6D5E-4DD8-A25D-C008E296D5BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E98AC7F9-FDDD-46B6-855A-66EE0909CF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E98AC7F9-FDDD-46B6-855A-66EE0909CF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E98AC7F9-FDDD-46B6-855A-66EE0909CF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E98AC7F9-FDDD-46B6-855A-66EE0909CF9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAC023E7-6D5E-4DD8-A25D-C008E296D5BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAC023E7-6D5E-4DD8-A25D-C008E296D5BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAC023E7-6D5E-4DD8-A25D-C008E296D5BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAC023E7-6D5E-4DD8-A25D-C008E296D5BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

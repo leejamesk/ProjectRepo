@@ -1,0 +1,12 @@
+﻿input.search-box {
+    background-image: url('/images/search.png');
+}
+/*span#search-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: -22px;
+    top: 3px;
+    background-image: url('/images/search.png');    
+}*/

@@ -1,0 +1,57 @@
+﻿@{
+    Layout = null;
+}
+@Styles.Render("~/Content/bootstrap/base")
+<link rel="stylesheet" href="~/Content/font-awesome.min.css"> 
+<link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+<style>
+    #msgboard-container {
+        padding: 15px;
+    }
+    .msgpage-header {
+        padding: 0 0 0 15px;
+    }
+    .search-form {
+        float: right;
+        padding: 0 15px 0 0;
+    }
+</style>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">tMB: Home</a>
+        </div>                                       
+        <div class="collapse navbar-collapse navbar-ex1-collapse">        
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Login</a></li>   
+                <li><a href="#">Register</a></li>           
+            </ul>
+        </div>
+    </nav>
+    <h2 class="msgpage-header">Messages.</h2>
+    <div class="search-form">
+        @Html.Partial("_Search")
+    </div>
+    <div id="msgboard-container">
+        <div id="msgboard-table">
+            @Html.Partial("_MessageBoardTable")
+        </div>
+    </div>
+</body>
+</html>
+
+@Scripts.Render("~/bundles/jquery")

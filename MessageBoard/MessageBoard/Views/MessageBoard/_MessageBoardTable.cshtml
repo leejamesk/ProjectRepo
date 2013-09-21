@@ -1,0 +1,65 @@
+﻿@{
+    var msgString = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.";    
+}
+<style>    
+    .center-table
+    {
+      margin: 0 auto !important;
+      float: none !important;
+    }
+    .above-table-padding {
+        padding-bottom: 10px;
+    }
+</style>
+<div class="above-table-padding">
+    <button type="button" class="btn btn-primary">New Post</button>
+    <button type="button" class="btn btn-info">Archived</button>
+</div>
+<table class="table table-bordered center-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Date Posted</th>
+            <th>Message Body</th>
+            <th colspan="3">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>James</td>
+            <td>@DateTime.Now</td>
+            <td>@msgString</td>
+            <td>                
+                <button type="button" class="btn btn-default action-btn btn-lg" title="Archive Message">
+                    <i class="icon-archive"></i>
+                </button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-default action-btn btn-lg" title="Delete Message">
+                    <i class="icon-trash"></i>
+                </button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-default action-btn btn-lg" title="Edit Message">
+                    <i class="icon-pencil"></i>
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>James</td>
+            <td>@DateTime.Now</td>
+            <td>@msgString</td>
+            <td>                
+                <button type="button" class="btn btn-default action-btn btn-lg"><i class="icon-archive"></i></button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-default action-btn btn-lg"><i class="icon-trash"></i></button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-default action-btn btn-lg">
+                    <i class="icon-pencil"></i>
+                </button>
+            </td>
+        </tr>             
+    </tbody>
+</table>
