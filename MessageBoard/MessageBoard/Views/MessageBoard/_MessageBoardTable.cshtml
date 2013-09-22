@@ -10,6 +10,13 @@
     .above-table-padding {
         padding-bottom: 10px;
     }
+    .action-btn {
+        max-width: 49px;
+        margin-bottom: 5px;
+    }
+    td.date-row {
+        min-width: 200px;
+    }
 </style>
 <div class="above-table-padding">
     <button type="button" class="btn btn-primary">New Post</button>
@@ -27,39 +34,31 @@
     <tbody>
         <tr>
             <td>James</td>
-            <td>@DateTime.Now</td>
+            <td class="date-row">@DateTime.Now</td>
             <td>@msgString</td>
-            <td>                
-                <button type="button" class="btn btn-default action-btn btn-lg" title="Archive Message">
-                    <i class="icon-archive"></i>
-                </button>
-            </td>
             <td>
-                <button type="button" class="btn btn-default action-btn btn-lg" title="Delete Message">
-                    <i class="icon-trash"></i>
-                </button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-default action-btn btn-lg" title="Edit Message">
-                    <i class="icon-pencil"></i>
-                </button>
-            </td>
+                <span>
+                    <button type="button" class="btn btn-default action-btn btn-lg"><i class="icon-archive" style="color: #46b8da;"></i></button>
+            
+                    <button type="button" class="btn btn-default action-btn btn-lg"><i class="icon-trash" style="color: #d43f3a;"></i></button>          
+            
+                    <button type="button" class="btn btn-default action-btn btn-lg"><i class="icon-pencil" style="color: #4cae4c;"></i></button>
+                </span>
+            </td> 
         </tr>
         <tr>
             <td>James</td>
             <td>@DateTime.Now</td>
             <td>@msgString</td>
-            <td>                
-                <button type="button" class="btn btn-default action-btn btn-lg"><i class="icon-archive"></i></button>
-            </td>
             <td>
-                <button type="button" class="btn btn-default action-btn btn-lg"><i class="icon-trash"></i></button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-default action-btn btn-lg">
-                    <i class="icon-pencil"></i>
-                </button>
-            </td>
+                <span>
+                    <button type="button" class="btn btn-default action-btn btn-lg"><i class="icon-archive"></i></button>
+            
+                    <button type="button" class="btn btn-default action-btn btn-lg"><i class="icon-trash"></i></button>          
+            
+                    <button type="button" class="btn btn-default action-btn btn-lg"><i class="icon-pencil"></i></button>
+                </span>
+            </td>                                      
         </tr>             
     </tbody>
 </table>
